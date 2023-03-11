@@ -132,6 +132,6 @@ body {
     }
 
     .game__img {
-        width: 343px;
+        width: 100%;
     }
 }
