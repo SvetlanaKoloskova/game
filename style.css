@@ -151,6 +151,58 @@ body {
     height: 333px;
 }
 
+.gameremember {
+    background: #000915;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 135px;
+    padding-top: 239px;
+    padding-bottom: 239px;
+}
+
+.gameremember__img {
+    height: 322px;
+}
+
+.gameremember__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.gameremember__box_title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF; 
+    padding-bottom: 32px;   
+}
+
+.gameremember__box_description {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;    
+    padding-bottom: 32px;
+}
+
+.gameremember__box_button {
+    background: #9C0332;
+    border-radius: 30px;
+    width: 240.44px;
+    height: 48.6px;
+    border: none;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.gameremember__box_button:hover {
+    cursor: url(./img/Vector.svg), pointer;
+}
+
 @media (max-width: 767px) {
 
     .center {
@@ -184,7 +236,7 @@ body {
     }
 
     .game__img {
-        width: 343px;
+        width: 100%;
     }
 
     .gameseason {
@@ -202,6 +254,7 @@ body {
 
     .gameseason__box_title {
         font-size: 32px;
+        line-height: 39px;
     }
     
     .gameseason__box_description {
@@ -211,5 +264,32 @@ body {
 
     .gameseason__img {
         height: 344px;
+    }
+
+    .gameremember {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 51px;
+        padding-bottom: 90px;
+        gap: 64px;
+    }
+
+    .gameremember__box {
+        text-align: center;
+        align-items: center;
+    }
+
+    .gameremember__box_title {
+        font-size: 32px;
+        line-height: 39px;
+    }
+    
+    .gameremember__box_description {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .gameseason__img {
+        height: 231px;
     }
 }
