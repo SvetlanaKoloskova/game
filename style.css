@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    height: 1024px;
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+    padding-top: 217px;
+    padding-bottom: 32px;
+    max-width: 788px;
+}
+
+.top__description {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding-bottom: 44px;
+    max-width: 481px;
+}
+
+.top__bold {
+    font-weight: 700;
+}
+
+.top__button {
+    background: #9C0332;
+    border-radius: 30px;
+    width: 234.06px;
+    height: 48.6px;
+    border: none;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF; 
+}
+
+.top__button:hover {
+    cursor: url(./img/Vector.svg), pointer;
+}
+
+.game {
+    background: #000915;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.game__box {
+    position: relative;
+}
+
+.game__link:hover {
+    cursor: url(./img/Vector.svg), pointer;
+}
+
+.game__img {
+    border-radius: 16px;    
+}
+
+.game__img:hover {
+    box-shadow: 0 0 0 3px #44D2FF;
+}
+
+.game__text {
+    position: absolute;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    left: 32px;
+    bottom: 32px;
+}
+
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        height: 735px;
+        background-image: url(./img/mobile/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top__title {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        padding-top: 238px;
+    }
+
+    .top__description {
+        font-size: 14px;
+        line-height: 22px;
+        padding-bottom: 32px;
+        text-align: center;
+    }
+
+    .game__img {
+        width: 343px;
+    }
+}
